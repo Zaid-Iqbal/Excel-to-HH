@@ -191,7 +191,7 @@ namespace Excel_to_HH
             //JWT authentication
             var client = new WordPressClient("https://zed.exioite.com/wp-json/");
             client.AuthMethod = AuthMethod.JWT;
-            await client.RequestJWToken("zaid@exioite.com", "*xuFKWOX@t8Oc$8fgALK4HLh");
+            await client.RequestJWToken("EMAIL", "PASSWORD");
             return client;
         }
         public static async Task ReadWebsite(IWebDriver driver, WebDriverWait wait, List<Product> list)
